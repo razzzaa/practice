@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+    <link href="scratch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #eee;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-lg-9 col-xl-7">
+                    <div class="card rounded-3">
+                        <div class="card-body p-4">
+
+                            <h4 class="text-center my-3 pb-3">To Do App</h4>
+
+                            <form id='form'
+                                class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+                                <div class="col-12">
+                                    <div class="form-outline">
+                                        <input type="text" id="writeTodo" class="form-control" />
+                                        <label class="form-label" for="writeTodo">Enter a task here</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-outline">
+                                        <input type="text" id="dueDate" class="form-control" />
+                                        <label class="form-label" for="dueDate">Due</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button id="addTodo" type="button" class="btn btn-primary">Add Task</button>
+                                </div>
+                                <div class="col-12">
+                                    <button onclick="document.location='http://127.0.0.1:5501/calendar/cal.html'"
+                                        id="calendar" type="button" class="btn btn-outline-primary">Go To
+                                        Calendar</button>
+                                </div>
+                                <div class="col-12">
+                                    <button id="save" type="button" class="btn btn-primary">Save</button>
+                                </div>
+                                <div class="col-12">
+                                    <button id="cancel" type="button" class="btn btn-outline-primary">Cancel</button>
+                                </div>
+                            </form>
+
+                            <table class="table mb-4">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No.</th>
+                                        <th scope="col">Todo item</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Due</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tasksi">
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scratch.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+</body>
+
+</html>

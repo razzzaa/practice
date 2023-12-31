@@ -1,0 +1,55 @@
+button#addBtn {
+    display: flex;
+}
+
+ul.list-group.mb-0 {
+    text-align: center;
+}
+
+.align-items-center {
+    align-items: baseline !important;
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 200px;
+}
+
+.form-outline.flex-fill {
+    padding: 21px;
+}
+
+body {
+    background-color: #19426b;
+}
+
+td {
+    border-top-width: var(--bs-border-width);
+    padding-left: 200px;
+}
+
+tr.bought {
+    background: #44d3e61c;
+    display: hidden;
+}
+
+tr.bought .btn-bought {
+    display: none;
+}
+
+.btn-restore {
+    display: none;
+}
+
+.btn-restore .done {
+    display: in;
+}
+
+.btn-bought {
+    background-color: rgba(99, 70, 136, 0.753);
+    color: white;
+}
+
+tr.bought .btn-restore {
+    display: inline-block;
+}

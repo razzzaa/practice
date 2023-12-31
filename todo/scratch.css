@@ -1,0 +1,43 @@
+.btn-restore {
+    display: none;
+}
+
+tr.done {
+    background: #44d3e61c;
+}
+
+tr.done .btn-restore {
+    display: inline-block;
+}
+
+tr.done .btn-done {
+    display: none;
+
+}
+
+.container {
+    max-width: 100%;
+}
+
+.btn-save {
+    display: none;
+}
+
+.btn-done {
+    background-color: rgba(99, 70, 136, 0.753);
+    color: #fff;
+}
+
+#save,
+#cancel {
+    display: none;
+}
+
+.onEdit #save,
+.onEdit #cancel {
+    display: inline-block;
+}
+
+.onEdit #addTodo {
+    display: none;
+}
